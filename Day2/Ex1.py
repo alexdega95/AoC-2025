@@ -2,7 +2,7 @@ with open('input.txt') as file:
     data = file.readline()
 data = data.split(',')
 
-# get only ranges with even figures or just the one we need if there's only that
+# This function avoids to check for invalid IDs where it's impossible to have them (number with odd number of figures)
 def check_range(low, high):
     if low == high:
         return [low // 2] 
@@ -16,7 +16,7 @@ for id_range in data:
     len_low = len(low)
     len_high = len(high)
 
-    # each number with 
+
     for l in check_range(len_low, len_high):
         a = 10 ** (l - 1)   
         b = 10 ** l 
