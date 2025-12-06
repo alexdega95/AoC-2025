@@ -1,4 +1,4 @@
-with open('input.txt', 'r') as file:
+with open('input.txt/mnt/Storage/Uni/Progettini/adventOfCode25/Day5/input.txt', 'r') as file:
     data = file.readlines()
 to_sort = []
 for row in data:
